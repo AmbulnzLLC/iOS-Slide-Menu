@@ -600,7 +600,7 @@ static SlideNavigationController *singletonInstance;
     self.lastRevealedMenu = menu;
 	
 	[removingMenuViewController.view removeFromSuperview];
-	[self.view.window insertSubview:menuViewController.view atIndex:0];
+	[self.view.superview insertSubview:menuViewController.view atIndex:0];
 
 	[self updateMenuFrameAndTransformAccordingToOrientation];
 	
